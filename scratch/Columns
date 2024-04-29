@@ -1,0 +1,101 @@
+id   --->  generate a 7 digit number 
+
+Name ---> Name of the house (pass from the list given in column content)
+
+Description --> Generate description of the house take it from the csv file
+
+Building type --> ENTIRE HOUSE,Apartment, Private Room, Shared Room
+
+property type --> Condominium, Loft, Townhouse,Cabin,Apartment, House,Bed & Breakfast, Unconvetional
+
+host id --> generate a 7 digit number
+
+host name --> generate names
+
+host_identity_verified --> confirmed not confirmed
+
+neighbourhood --> 
+
+country --> US,London,Germany,Sydney,goa, delhi,mumbai,rishikesh
+
+zipcodes --> generate random 4 digit
+
+currency --> generate currency
+
+instant_bookable --> true, false
+
+cancellation_policy --> strict,moderate flexible
+
+Construction year --> starting from 2008
+
+Accomodation year --> consider from 2009
+
+commission --> generate random commission between 10% to 15%
+
+Booking total --> 
+
+IF usa between $64 to $90
+IF India between 1000 to 2000  multiply USD with 82.72 for indian conversion
+IF Europe beteen $100 to $140
+IF Austalia same as europe
+
+status -->  confirmed or not confirmed
+
+bookings --> ensure by 2013 it comes atleast till 10 million bookings
+
+service fee --> 20%
+
+if confirmed Service fee on booking total else don't put service fee
+
+food cost --> between 20 to 40 usd
+
+revenue --> 
+
+host_revenue -->
+
+minimum nights -->  
+
+reviews -->
+
+number of reviews --> 
+
+reviews per month --> between 1 to infinity
+
+review rate number --> between 1 to 10
+
+availability 365 --> 
+
+house_rules --> consider from the dataset
+
+KPI Column
+
+Total revenue : 
+If host is experience then
+20% of booking total(bt)+food cost+airbnb mag ($15)
+
+else
+
+3% of bt+service fee*booking+food cost+airbnb mag
+
+Host revenue = =S2*J2+0.1*S2+15
+
+BT*Host fee+10% commission*BT
+
+Platform revenue
+CTR*Impressions*Cost per click*Rating factor
+
+CTR = 0.3
+Impressions = Reviews per month
+CPC = $0.76
+Rating = Review Rate number
+
+Platform revenue: =0.3*AA2*0.9*AB2
+
+=IF(I2 = "experienced", 
+    (0.2 * S2 + W2 + 15) + AE2, 
+    (0.03 * S2 + V2 * S2 + W2 + 15))+AE2
+
+
+
+
+

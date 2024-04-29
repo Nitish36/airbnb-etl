@@ -1,0 +1,43 @@
+###
+### A complete description of a Prefect Deployment for flow 'push-to-api'
+###
+name: airbnb_deployment
+description: null
+version: 4321ba43723948dd7aca01ae9f2076a3
+# The work queue that will handle this deployment's runs
+work_queue_name: default
+work_pool_name: null
+tags: []
+parameters: {}
+schedule: null
+schedules: []
+is_schedule_active: null
+infra_overrides: {}
+infrastructure:
+  type: process
+  env: {}
+  labels: {}
+  name: null
+  command: null
+  stream_output: true
+  working_dir: null
+  block_type_slug: process
+  _block_type_slug: process
+
+###
+### DO NOT EDIT BELOW THIS LINE
+###
+flow_name: push-to-api
+manifest_path: null
+storage: null
+path: F:\Projects\Airbnb-Analysis
+entrypoint: airbnb_pipeline.py:push_to_api
+parameter_openapi_schema:
+  title: Parameters
+  type: object
+  properties: {}
+  required: null
+  definitions: null
+timestamp: '2024-04-28T10:38:20.008895+00:00'
+triggers: []
+enforce_parameter_schema: null

@@ -1,0 +1,83 @@
+Generate a code using faker for airbnb with the following columns
+
+id --> Generate a 7 digit number
+
+Name --> [Black Lake Cabin,Radcliff Refuge,Rockaway beach Villa,The Red Bungalow of Deerfield,Oasis of Trees and Tranquility – Pune]
+
+Description --> [Clean & quiet apt home by the park,Skylit Midtown Castle
+Cozy Clean Guest Room - Family Apt,Cozy Room #3, Landmark Home 1 Block to PRATT
+]
+
+Building type --> [Enture house,Apartment,Private room,Shared room]
+
+host_id --> Generte a 7 digit number
+
+Host_name --> [Madaline,Michelle,Wilson]
+
+Host_identity_verified --> [confirmed or not confirmed]
+
+Neighbourhood --> [Richmond in Melbourne,Constitución in Buenos Aires Argentina,The Bukit Peninsula in Bali Indonesia ,District VII in Budapest Hungary]
+
+States --> [US,California,Arizona,Alaska,Dallas,Arkansas,Colorado,London,Germany,Sydney,goa, delhi,mumbai,rishikesh,Pune,Norway, Poland, Sweden, Austria,Greece,Brisbane,Perth,Queensland,Darwin]
+
+Zipcodes --> Generate randome 4 digit
+
+Currency --> Generate usd if places are between US to Sydney
+	     Else generate it based on Indian Rupees
+
+
+Instant_bookables --> [True,False]
+
+Cancellation_policy --> Strict,moderate,flexible
+
+Construction year --> starting from 2008 till 2023
+
+Accomodation year --> consider from 2009 till 2023
+
+commission --> generate random commission between 10% to 15%
+
+Booking total --> 
+
+IF states in [US,California,Arizona,Alaska,Dallas,Arkansas,Colorado] between $64 to $90
+IF states in [Goa,Delhi,mumbai,rishikesh,Pune] between 1000 to 2500
+IF states in [London,Germany,Norway, Poland, Sweden, Austria] beteen $100 to $140
+IF states in [Sydney,Brisbane,Perth,Queensland,Darwin] between $100 to $140
+
+status -->  confirmed or not confirmed
+
+bookings --> ensure by 2013 it comes atleast till 10 million bookings
+
+service fee --> 20%
+
+if confirmed Service fee on booking total else don't put service fee
+
+food cost --> between 100 to 5000
+
+
+minimum nights --> between 1 to 500
+
+reviews --> [When we first stumbled upon this flat on AirBnB, it seemed almost too good to be true. There must be a catch! But everything was as perfect as it seemed online. (Host Name) is the most thoughtful, gracious host.,
+It would be my pleasure to host them again anytime. They left the place so spotless; I could not even tell if they stayed in the home! Thanks so much! I sincerely hope to host you again,
+They were easy to communicate with and left the space in excellent condition. We would be happy to host them again.]
+
+reviews per month --> between 1 to infinity
+
+review rate number --> between 1 to 10
+
+house_rules --> [Clean up and treat the home the way you'd like your home to be treated,
+ No smoking,
+ Pet friendly but please confirm with me if the pet you are planning on bringing with you is OK. I have a cute and quiet mixed chihuahua. I could accept more guests (for an extra fee) but this also needs to be confirmed beforehand. Also friends traveling together could sleep in separate beds for an extra fee (the second bed is either a sofa bed or inflatable bed). Smoking is only allowed on the porch.,
+ My ideal guests would be warm, friendly, and respectful of sharing my home and it's rhythms. I am allergic to cigarettes, so no smoking please, not even in the yard. A quiet homecoming is much appreciated at the end of the evening's nightlife.
+
+]
+
+
+KPI
+
+Host_revenue --> 10% on booking total + randombetween(0.02,0.03)*booking total (status confirmed)
+
+
+Airbnbmag Consider 15$ to 20$ on that for indian magzine Consider 50 to 60 Rs
+
+revenue --> Booking_Total + service_fee*booking_total+food_cost
+
